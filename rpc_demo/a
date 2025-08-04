@@ -1,0 +1,16 @@
+#
+win：
+protoc -I . `
+--go_out=./rpc_demo/service `
+--go_opt=module="Go-Demo/rpc_demo/service" `
+--go-grpc_out=./rpc_demo/service `
+--go-grpc_opt=module="Go-Demo/rpc_demo/service" `
+./rpc_demo/service/service.proto
+
+linux：
+protoc -I . \
+--go_out=./rpc_demo/service \
+--go_opt=module="Go-Demo/rpc_demo/service" \
+-go-grpc_out=./rpc_demo/service \
+--go-grpc_opt=module="Go-Demo/rpc_demo/service" \
+./rpc_demo/service/service.proto

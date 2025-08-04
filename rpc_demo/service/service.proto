@@ -1,0 +1,20 @@
+syntax = "proto3";
+package hello;
+option go_package = "Go-Demo/rpc_demo/service";
+
+message Request{
+  string value = 1;
+}
+message Response{
+  string value = 1;
+}
+
+// The HelloService service definition
+// service 关键字
+// HelloService 服务名称 对应接口的名称
+// service服务会对应.pb.go文件里interface,里面的rpc对应接口中的函数
+service HelloService{
+  rpc Hello (Request) returns (Response){}
+  rpc Channel(stream Request) returns (stream Response) {}
+}
+
