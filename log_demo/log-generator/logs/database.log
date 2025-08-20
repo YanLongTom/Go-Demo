@@ -1,0 +1,25 @@
+[2025-08-20 13:19:14] [WARN] [req_91888] 备份任务完成 size=2.3GB duration=45min
+[2025-08-20 13:19:14] [DEBUG] [req_43238] 连接池满载 active=100 max=100
+[2025-08-20 13:19:15] [ERROR] [req_60807] 索引重建开始 table=products
+[2025-08-20 13:19:15] [DEBUG] [req_72648] 连接池满载 active=100 max=100
+[2025-08-20 13:19:15] [ERROR] [req_16667] 索引重建开始 table=products
+[2025-08-20 13:19:15] [ERROR] [req_16785] 备份任务完成 size=2.3GB duration=45min
+[2025-08-20 13:19:15] [INFO] [req_27713] 慢查询警告 table=orders duration=3456ms
+[2025-08-20 13:19:15] [INFO] [req_69941] 慢查询警告 table=orders duration=3456ms
+[2025-08-20 13:19:15] [WARN] [req_84785] 慢查询警告 table=orders duration=3456ms
+[2025-08-20 13:19:15] [WARN] [req_62362] 备份任务完成 size=2.3GB duration=45min
+[2025-08-20 13:19:15] [INFO] [req_81086] 备份任务完成 size=2.3GB duration=45min
+[2025-08-20 13:19:15] [INFO] [req_1280] 查询执行完成 table=users duration=12ms rows=156
+[2025-08-20 13:19:16] [DEBUG] [req_94762] 慢查询警告 table=orders duration=3456ms
+[2025-08-20 13:19:16] [WARN] [req_67189] 索引重建开始 table=products
+[2025-08-20 13:19:16] [WARN] [req_82975] 连接池满载 active=100 max=100
+[2025-08-20 13:19:16] [DEBUG] [req_14157] 死锁检测 table=inventory session=1234
+[2025-08-20 13:19:16] [WARN] [req_26805] 连接池满载 active=100 max=100
+[2025-08-20 13:19:16] [WARN] [req_87136] 死锁检测 table=inventory session=1234
+[2025-08-20 13:19:16] [ERROR] [req_63615] 备份任务完成 size=2.3GB duration=45min
+[2025-08-20 13:19:16] [WARN] [req_17797] 索引重建开始 table=products
+[2025-08-20 13:19:16] [DEBUG] [req_68863] 连接池满载 active=100 max=100
+[2025-08-20 13:19:16] [ERROR] [req_74514] 连接池满载 active=100 max=100
+[2025-08-20 13:19:17] [DEBUG] [req_56953] 查询执行完成 table=users duration=12ms rows=156
+[2025-08-20 13:19:17] [ERROR] [req_36374] 连接池满载 active=100 max=100
+[2025-08-20 13:19:17] [DEBUG] [req_96640] 死锁检测 table=inventory session=1234

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"Demo/rpc_demo/service"
 	"context"
+	"g/service"
 	"google.golang.org/grpc"
 	"log"
 	"net"

@@ -1,0 +1,3 @@
+Hello from embedded file!
+This is a static text file that will be embedded into the Go binary.
+You can read this content at runtime without needing the original file.

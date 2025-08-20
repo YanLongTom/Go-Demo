@@ -1,0 +1,8 @@
+{
+    "name": "嵌入配置",
+    "version": "1.0.0",
+    "settings": {
+        "debug": true,
+        "timeout": 30
+    }
+}

@@ -1,0 +1,30 @@
+[2025-08-20 13:19:11] [INFO] [req_8610] 数据库连接超时 connection=pool-1
+[2025-08-20 13:19:11] [INFO] [req_31235] 缓存更新成功 key=user:12345
+[2025-08-20 13:19:12] [INFO] [req_30508] API调用失败 service=payment-service timeout=5000ms
+[2025-08-20 13:19:12] [INFO] [req_3542] 缓存更新成功 key=user:12345
+[2025-08-20 13:19:12] [INFO] [req_86945] 支付处理完成 paymentId=54321 amount=199.99
+[2025-08-20 13:19:12] [INFO] [req_59353] 支付处理完成 paymentId=54321 amount=199.99
+[2025-08-20 13:19:12] [INFO] [req_41663] 用户登录成功 userId=12345
+[2025-08-20 13:19:12] [WARN] [req_12785] API调用失败 service=payment-service timeout=5000ms
+[2025-08-20 13:19:12] [WARN] [req_28940] 缓存更新成功 key=user:12345
+[2025-08-20 13:19:12] [WARN] [req_4988] 缓存更新成功 key=user:12345
+[2025-08-20 13:19:12] [WARN] [req_33680] 数据库连接超时 connection=pool-1
+[2025-08-20 13:19:12] [ERROR] [req_53646] 订单创建失败 orderId=98765 error=库存不足
+[2025-08-20 13:19:13] [ERROR] [req_51988] 数据库连接超时 connection=pool-1
+[2025-08-20 13:19:13] [WARN] [req_28017] API调用失败 service=payment-service timeout=5000ms
+[2025-08-20 13:19:13] [WARN] [req_73] API调用失败 service=payment-service timeout=5000ms
+[2025-08-20 13:19:13] [ERROR] [req_69418] 用户登录成功 userId=12345
+[2025-08-20 13:19:13] [INFO] [req_95826] 数据库连接超时 connection=pool-1
+[2025-08-20 13:19:13] [ERROR] [req_55980] 用户登录成功 userId=12345
+[2025-08-20 13:19:13] [DEBUG] [req_27707] 支付处理完成 paymentId=54321 amount=199.99
+[2025-08-20 13:19:13] [DEBUG] [req_24176] 数据库连接超时 connection=pool-1
+[2025-08-20 13:19:13] [WARN] [req_87621] 订单创建失败 orderId=98765 error=库存不足
+[2025-08-20 13:19:13] [WARN] [req_81228] 用户登录成功 userId=12345
+[2025-08-20 13:19:14] [DEBUG] [req_13061] 用户登录成功 userId=12345
+[2025-08-20 13:19:14] [ERROR] [req_88372] 数据库连接超时 connection=pool-1
+[2025-08-20 13:19:14] [DEBUG] [req_50001] 支付处理完成 paymentId=54321 amount=199.99
+[2025-08-20 13:19:14] [INFO] [req_90371] API调用失败 service=payment-service timeout=5000ms
+[2025-08-20 13:19:14] [INFO] [req_33619] 缓存更新成功 key=user:12345
+[2025-08-20 13:19:14] [ERROR] [req_26706] 数据库连接超时 connection=pool-1
+[2025-08-20 13:19:14] [INFO] [req_4546] 订单创建失败 orderId=98765 error=库存不足
+[2025-08-20 13:19:14] [WARN] [req_81083] 支付处理完成 paymentId=54321 amount=199.99

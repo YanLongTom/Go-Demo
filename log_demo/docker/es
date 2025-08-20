@@ -1,0 +1,24 @@
+# Elasticsearch Dockerfile - 使用国内镜像源
+FROM registry.cn-hangzhou.aliyuncs.com/elastic/elasticsearch:8.8.0
+
+# 设置环境变量
+ENV discovery.type=single-node
+ENV xpack.security.enabled=false
+ENV xpack.security.enrollment.enabled=false
+ENV xpack.security.http.ssl.enabled=false
+ENV xpack.security.transport.ssl.enabled=false
+ENV ES_JAVA_OPTS="-Xms512m -Xmx512m"
+
+# 创建数据目录
+RUN mkdir -p /usr/share/elasticsearch/data
+RUN chown -R elasticsearch:elasticsearch /usr/share/elasticsearch/data
+
+# 暴露端口
+EXPOSE 9200 9300
+
+# 启动用户
+USER elasticsearch
+
+# 启动命令
+CMD ["elasticsearch"]
+
