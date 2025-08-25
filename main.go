@@ -2,13 +2,15 @@ package main
 
 import (
 	"fmt"
-	"net/http"
+	"time"
 )
 
 func main() {
-	http.Handle("/", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("hello"))
-	}))
-	fmt.Println("Hello World")
-	http.ListenAndServe(":8080", nil)
+	s := []int{1, 2, 3}
+	for _, v := range s {
+		go func() {
+			fmt.Println(v)
+		}()
+	}
+	time.Sleep(time.Second)
 }
