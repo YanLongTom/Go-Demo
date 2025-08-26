@@ -15,6 +15,7 @@ func FindDemo() {
 		}
 		fmt.Println("查询失败", ret.Error)
 	}
+
 	fmt.Println(u)
 	// 1.
 	var u1 []User
