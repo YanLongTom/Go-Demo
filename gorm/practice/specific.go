@@ -20,6 +20,7 @@ func Specific1() {
 		{Username: "user1", Email: "user1@example.com"},
 		{Username: "hello", Email: "user2@example.com"},
 	}
+	// 冲突检测处理
 	// INSERT INTO `user`  VALUES ('hello','user2@example.com','','2025-08-26 20:21:08.67')
 	//ON DUPLICATE KEY UPDATE `email`=VALUES(`email`),`new@123`=VALUES(`new@123`)
 	db.Debug().Clauses(

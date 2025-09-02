@@ -9,7 +9,7 @@ import (
 type CreateUser interface { //创建对象时使用的Hook
 	// gorm 新版本钩子需要传递 *gorm.DB，V2 不需要
 	BeforeCreate(*gorm.DB) error
-	//BeforeSave() error
+	BeforeUpdate() error
 	AfterCreate(*gorm.DB) error
 	//AfterSave() error
 }
@@ -27,8 +27,25 @@ func (u *User) AfterCreate(tx *gorm.DB) error {
 	return nil
 }
 
+// AfterCreate → 只有在SQL执行成功后才会执行
+func (u *User) BeforeUpdate(tx *gorm.DB) error {
+	fmt.Println("BeforeSave")
+	return nil
+}
+
 func HookCreate() {
 	u := User{ID: 1, Username: "李元芳", Email: "lyf@yf.com"}
 	ret := db.Create(&u).Error
 	fmt.Println(u, ret)
+}
+
+func ScopeDemo() {
+	var u []User
+	AmountGreaterThan1000 := func(db *gorm.DB) *gorm.DB {
+		return db.Where("id > ?", 3)
+	}
+	db.Scopes(AmountGreaterThan1000).Find(&u)
+	for _, v := range u {
+		fmt.Println(v)
+	}
 }
